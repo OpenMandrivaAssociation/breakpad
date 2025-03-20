@@ -58,6 +58,7 @@ rm -rf %{buildroot}%{_docdir}/breakpad-0.1
 %{_bindir}/pid2md
 %{_bindir}/sym_upload
 %{_libexecdir}/core_handler
+%{_bindir}/dump_syms_mac
 
 %files -n %{name}-devel
 %{_includedir}/breakpad
