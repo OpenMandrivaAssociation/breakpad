@@ -1,6 +1,6 @@
 Name:               breakpad
 Version:            2024.02.16
-Release:            1
+Release:            2
 Summary:            Google Breakpad crash-reporting system
 License:            BSD-3-Clause
 Group:		        System
