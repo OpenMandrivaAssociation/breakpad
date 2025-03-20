@@ -1,6 +1,6 @@
 Name:               breakpad
 Version:            2024.02.16
-Release:            2
+Release:            3
 Summary:            Google Breakpad crash-reporting system
 License:            BSD-3-Clause
 Group:		        System
@@ -47,10 +47,7 @@ rm -rf %{buildroot}%{_docdir}/breakpad-0.1
 %license LICENSE
 %doc README.md AUTHORS ChangeLog INSTALL NEWS
 %{_bindir}/core2md
-%{_bindir}/dump_syms
-%ifarch x86_64 %{ix86}
-%{_bindir}/dump_syms_mac
-%endif
+%{_bindir}/dump_sym*
 %{_bindir}/microdump_stackwalk
 %{_bindir}/minidump-2-core
 %{_bindir}/minidump_dump
@@ -59,7 +56,6 @@ rm -rf %{buildroot}%{_docdir}/breakpad-0.1
 %{_bindir}/pid2md
 %{_bindir}/sym_upload
 %{_libexecdir}/core_handler
-%{_bindir}/dump_syms_mac
 
 %files -n %{name}-devel
 %{_includedir}/breakpad
