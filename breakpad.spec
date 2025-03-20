@@ -19,6 +19,7 @@ A set of client and server components which implement a crash-reporting system.
 
 %package devel
 Summary: Development files for %{name}
+Requires:	%{name} = %{EVRD}
 
 %description devel
 Development files for the Google Breakpad crash-reporting system.
